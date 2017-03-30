@@ -42,8 +42,8 @@ var DBLite = function (path) {
 				ret = (this.con.State == 1);					// 接続中の時
 			}
 		} catch (e) {
-			println("Error(" + (e.number & 0xFFFF) + "):" + e.message);
-			println("    DBLite.open()");
+			Utility.println(Utility.errorStackTrace(e));
+			Utility.println("    DBLite.open()");
 		}
 		return ret;
 	};
@@ -64,8 +64,8 @@ var DBLite = function (path) {
 				ret = true;
 			}
 		} catch (e) {
-			println("Error(" + (e.number & 0xFFFF) + "):" + e.message);
-			println("    DBLite.close()");
+			Utility.println(Utility.errorStackTrace(e));
+			Utility.println("    DBLite.close()");
 		}
 		return ret;
 	};
@@ -94,12 +94,12 @@ var DBLite = function (path) {
 			cmd.Execute();									// 実行
 			ret = true;
 		} catch (e) {
-			println("Error(" + (e.number & 0xFFFF) + "):" + e.message);
-			print("    DBLite.execute(command=\""+command+"\"");
+			Utility.println(Utility.errorStackTrace(e));
+			Utility.print("    DBLite.execute(command=\""+command+"\"");
 			for (var i=1; i<arguments.length; i++) {
-				print(", "+arguments[i]);
+				Utility.print(", "+arguments[i]);
 			}
-			println(")");
+			Utility.println(")");
 		}
 		return ret;
 	};
@@ -134,19 +134,19 @@ var DBLite = function (path) {
 			this.con.CommitTrans();							// トランザクション、コミット
 			ret = true;
 		} catch (e) {
-			println("Error(" + (e.number & 0xFFFF) + "):" + e.message);
+			Utility.println(Utility.errorStackTrace(e));
 			if (command != null) {
-				print("    DBLite.executeMultiCommit(command=\""+command[0]+"\"");
+				Utility.print("    DBLite.executeMultiCommit(command=\""+command[0]+"\"");
 				for (var i=1; i<command.length; i++) {
-					print(", "+command[i]);
+					Utility.print(", "+command[i]);
 				}
-				println(")");
+				Utility.println(")");
 			}
 			try {
 				this.con.RollbackTrans();					// トランザクション、ロールバック
 			} catch (e) {
-				println("Error(" + (e.number & 0xFFFF) + "):" + e.message);
-				println("    DBLite.executeMultiCommit.rollback()");
+				Utility.println(Utility.errorStackTrace(e));
+				Utility.println("    DBLite.executeMultiCommit.rollback()");
 			}
 		}
 		return ret;
@@ -195,12 +195,12 @@ var DBLite = function (path) {
 				rs.MoveNext();								// 次の行へ移動
 			}
 		} catch (e) {
-			println("Error(" + (e.number & 0xFFFF) + "):" + e.message);
-			print("    DBLite.executeSelect(command=\""+command+"\"");
+			Utility.println(Utility.errorStackTrace(e));
+			Utility.print("    DBLite.executeSelect(command=\""+command+"\"");
 			for (var i=1; i<arguments.length; i++) {
-				print(", "+arguments[i]);
+				Utility.print(", "+arguments[i]);
 			}
-			println(")");
+			Utility.println(")");
 			ret = null;
 		} finally {
 			try {
@@ -208,8 +208,8 @@ var DBLite = function (path) {
 					rs.Close();								// 「Recordset」を閉じる
 				}
 			} catch (e) {
-				println("Error(" + (e.number & 0xFFFF) + "):" + e.message);
-				println("    DBLite.executeSelect.close()");
+				Utility.println(Utility.errorStackTrace(e));
+				Utility.println("    DBLite.executeSelect.close()");
 				ret = null;
 			}
 		}
