@@ -28,7 +28,7 @@ var DBLite = function (path) {
 		var ret = false;
 		try {
 			if (this.con == null) {
-				Utility.createFolder(this.fullpath);			// フォルダを作成
+				Utility.createFileFolder(this.fullpath);	// フォルダを作成
 				
 				// SQLiteにドライバ経由で接続
 				// <http://www.ch-werner.de/sqliteodbc/>のドライバが必要
