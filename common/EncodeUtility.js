@@ -1,4 +1,4 @@
-﻿// import: ActiveXObject("Msxml2.DOMDocument");
+// import: ActiveXObject("Msxml2.DOMDocument");
 // import: ActiveXObject("System.Text.UTF8Encoding");
 // import: ActiveXObject("System.Security.Cryptography.MD5CryptoServiceProvider");
 // import: ActiveXObject("System.Security.Cryptography.SHA1CryptoServiceProvider");
