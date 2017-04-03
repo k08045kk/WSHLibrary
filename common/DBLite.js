@@ -1,4 +1,4 @@
-"use strict";
+﻿"use strict";
 
 /**
  * 簡易データベース
