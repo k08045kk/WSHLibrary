@@ -10,7 +10,7 @@ A library for WSH(Windows Script Host).
 	+ ファイルの読み込み／書き込み
 	+ ファイル／フォルダの検索
 	+ ファイル／フォルダのコピー／移動／削除
-+ FileUtility.Shell.js - WSH(JScript)用ファイルライブラリ
++ FileUtility.Shell.js - WSH(JScript)用ファイル関連（シェル関連）ライブラリ
 	+ 送る、ゴミ箱へ送る、zip圧縮、zip解凍
 + ErrorUtility.js - WSH(JScript)用エラーライブラリ
 	+ エラーの文字列化
@@ -42,6 +42,9 @@ A library for WSH(Windows Script Host).
 	+ wmiObjectをObject化して取得
 + DBLite.js - WSH(JScript)用簡易データベース
 	+ SQLite(DB)の操作
+
+元々ブログで公開していた物です。使用例等は、ブログの方を参照願います。  
+https://www.bugbugnow.net/search/label/WSHLibrary
 
 
 ## Copyright
