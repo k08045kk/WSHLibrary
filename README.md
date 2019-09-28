@@ -10,8 +10,6 @@ A library for WSH(Windows Script Host).
 	+ ファイルの読み込み／書き込み
 	+ ファイル／フォルダの検索
 	+ ファイル／フォルダのコピー／移動／削除
-+ FileUtility.Shell.js - WSH(JScript)用ファイル・シェル関連
-	+ 送る、ゴミ箱へ送る、zip圧縮、zip解凍
 + ErrorUtility.js - WSH(JScript)用エラーライブラリ
 	+ エラーの文字列化
 	+ 実行履歴の文字列化
@@ -34,6 +32,8 @@ A library for WSH(Windows Script Host).
 + HTTPUtility.js - WSH(JScript)用HTTPライブラリ
 	+ HTTP/HTTPSの取得
 	+ HTML/XMLの解析
++ ShellUtility.js - WSH(JScript)用シェル関連
+	+ 送る、ゴミ箱へ送る、zip圧縮、zip解凍
 + WebBrowser.js - WSH(JScript)用ブラウザ操作補助
 	+ ブラウザ操作補助
 	+ 操作ログの出力/キャッシュ
