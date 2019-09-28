@@ -43,7 +43,7 @@ A library for WSH(Windows Script Host).
 + DBLite.js - WSH(JScript)用簡易データベース
 	+ SQLite(DB)の操作
 
-元々ブログで公開していた物です。使用例等は、ブログの方を参照願います。  
+元々ブログで公開していたコードです。使用例等は、ブログの方を参照願います。  
 https://www.bugbugnow.net/search/label/WSHLibrary
 
 
