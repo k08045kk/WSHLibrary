@@ -14,7 +14,7 @@ A library for WSH(Windows Script Host).
 	+ エラーの文字列化
 	+ 実行履歴の文字列化
 	+ stack, captureStackTraceの疑似実現
-+ ErrorUtility.FileInfo.js - WSH(JScript)用エラーファイル情報付加
++ ErrorUtility.FileInfo.js - WSH(JScript)用エラー出力ファイル情報付加
 	+ エラーにファイル情報を付加
 + Console.js - WSH(JScript)用コンソール
 	+ consoleの疑似実現
