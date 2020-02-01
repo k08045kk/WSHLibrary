@@ -4,6 +4,7 @@
 A library for WSH(Windows Script Host).
 
 
+
 ## Description
 + FileUtility.js - WSH(JScript)用ファイルライブラリ
 	+ ファイル／フォルダの作成
@@ -45,9 +46,3 @@ A library for WSH(Windows Script Host).
 
 元々ブログで公開していたコードです。使用例等は、ブログの方を参照願います。  
 https://www.bugbugnow.net/search/label/WSHLibrary
-
-
-## Copyright
-Copyright (c) 2018 toshi (https://www.bugbugnow.net/p/profile.html)  
-Released under the MIT license.  
-see https://opensource.org/licenses/MIT
