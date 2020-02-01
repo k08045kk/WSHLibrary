@@ -46,3 +46,8 @@ A library for WSH(Windows Script Host).
 
 元々ブログで公開していたコードです。使用例等は、ブログの方を参照願います。  
 https://www.bugbugnow.net/search/label/WSHLibrary
+
+
+
+## Author
+[toshi](https://www.bugbugnow.net/p/profile.html)
